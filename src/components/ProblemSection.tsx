@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowDown } from "lucide-react";
 
 export function ProblemSection() {
   return (
@@ -38,6 +38,10 @@ export function ProblemSection() {
               className="hidden md:block absolute -right-10"
               style={{ color: '#333333' }}
             />
+            <ArrowDown
+              className="md:hidden absolute -bottom-6"
+              style={{ color: '#333333' }}
+            />
           </div>
 
           {/* Box 2: Direito */}
@@ -50,6 +54,10 @@ export function ProblemSection() {
               className="hidden md:block absolute -right-10"
               style={{ color: '#333333' }}
             />
+            <ArrowDown
+              className="md:hidden absolute -bottom-6"
+              style={{ color: '#333333' }}
+            />
           </div>
 
           {/* Box 3: Comunicação */}
@@ -60,6 +68,10 @@ export function ProblemSection() {
             <span style={{ color: '#0A2342' }}>Comunicação</span>
             <ArrowRight
               className="hidden md:block absolute -right-10"
+              style={{ color: '#333333' }}
+            />
+            <ArrowDown
+              className="md:hidden absolute -bottom-6"
               style={{ color: '#333333' }}
             />
           </div>

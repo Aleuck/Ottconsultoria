@@ -3,9 +3,6 @@
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
     *, :before, :after, ::backdrop {
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-leading: initial;
@@ -35,7 +32,6 @@
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --color-gray-100: oklch(.967 .003 264.542);
     --color-white: #fff;
     --spacing: .25rem;
     --container-2xl: 42rem;
@@ -394,20 +390,12 @@
     top: calc(var(--spacing) * 0);
   }
 
-  .top-\[109px\] {
-    top: 109px;
-  }
-
   .-right-10 {
     right: calc(var(--spacing) * -10);
   }
 
-  .left-\[133\.5px\] {
-    left: 133.5px;
-  }
-
-  .left-\[134\.5px\] {
-    left: 134.5px;
+  .-bottom-6 {
+    bottom: calc(var(--spacing) * -6);
   }
 
   .z-50 {
@@ -454,10 +442,6 @@
     display: none;
   }
 
-  .inline-block {
-    display: inline-block;
-  }
-
   .inline-flex {
     display: inline-flex;
   }
@@ -474,11 +458,6 @@
   .size-9 {
     width: calc(var(--spacing) * 9);
     height: calc(var(--spacing) * 9);
-  }
-
-  .size-full {
-    width: 100%;
-    height: 100%;
   }
 
   .h-8 {
@@ -501,8 +480,8 @@
     height: calc(var(--spacing) * 80);
   }
 
-  .h-\[86px\] {
-    height: 86px;
+  .h-auto {
+    height: auto;
   }
 
   .h-full {
@@ -525,8 +504,8 @@
     width: calc(var(--spacing) * 80);
   }
 
-  .w-\[180px\] {
-    width: 180px;
+  .w-\[120px\] {
+    width: 120px;
   }
 
   .w-full {
@@ -567,11 +546,6 @@
 
   .shrink-0 {
     flex-shrink: 0;
-  }
-
-  .translate-x-\[-50\%\] {
-    --tw-translate-x: -50%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
   .resize-none {
@@ -670,10 +644,6 @@
     background-color: var(--destructive);
   }
 
-  .bg-gray-100 {
-    background-color: var(--color-gray-100);
-  }
-
   .bg-input-background {
     background-color: var(--input-background);
   }
@@ -746,18 +716,6 @@
     text-align: center;
   }
 
-  .align-middle {
-    vertical-align: middle;
-  }
-
-  .font-\[\'EB_Garamond\:Regular\'\,sans-serif\] {
-    font-family: EB Garamond\:Regular, sans-serif;
-  }
-
-  .font-\[\'Montserrat\:Regular\'\,sans-serif\] {
-    font-family: Montserrat\:Regular, sans-serif;
-  }
-
   .font-serif {
     font-family: var(--font-serif);
   }
@@ -770,24 +728,6 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-
-  .text-\[15px\] {
-    font-size: 15px;
-  }
-
-  .text-\[128px\] {
-    font-size: 128px;
-  }
-
-  .leading-\[0\.8\] {
-    --tw-leading: .8;
-    line-height: .8;
-  }
-
-  .leading-\[normal\] {
-    --tw-leading: normal;
-    line-height: normal;
   }
 
   .leading-relaxed {
@@ -805,39 +745,13 @@
     font-weight: var(--font-weight-medium);
   }
 
-  .font-normal {
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
-  }
-
-  .tracking-\[3\.75px\] {
-    --tw-tracking: 3.75px;
-    letter-spacing: 3.75px;
-  }
-
   .tracking-wide {
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
   }
 
-  .text-nowrap {
-    text-wrap: nowrap;
-  }
-
   .whitespace-nowrap {
     white-space: nowrap;
-  }
-
-  .whitespace-pre {
-    white-space: pre;
-  }
-
-  .text-\[\#0a2342\] {
-    color: #0a2342;
-  }
-
-  .text-\[\#333333\] {
-    color: #333;
   }
 
   .text-foreground {
@@ -1087,6 +1001,12 @@
   }
 
   @media (width >= 48rem) {
+    .md\:hidden {
+      display: none;
+    }
+  }
+
+  @media (width >= 48rem) {
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -1297,24 +1217,6 @@ html {
 
 .font-serif {
   font-family: Playfair Display, Georgia, serif;
-}
-
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 
 @property --tw-space-y-reverse {

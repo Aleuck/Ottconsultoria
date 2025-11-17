@@ -35,11 +35,17 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
           <Button
             onClick={() => scrollToSection('servicos')}
-            className="px-8 py-6 tracking-wide transition-all hover:opacity-90"
+            className="px-8 py-6 tracking-wide transition-all"
             style={{
               backgroundColor: '#000080',
               color: '#F5F1E9',
               border: 'none'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#0000a8';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#000080';
             }}
           >
             PRONTO-SOCORRO (Agir na Crise)
@@ -48,12 +54,18 @@ export function HeroSection() {
           <Button
             onClick={() => scrollToSection('servicos')}
             variant="outline"
-            className="px-8 py-6 tracking-wide transition-all hover:bg-opacity-5"
+            className="px-8 py-6 tracking-wide transition-all"
             style={{
               backgroundColor: 'transparent',
-              color: '#AE9461',
+              color: '#7e6a43',
               borderColor: '#AE9461',
               borderWidth: '2px'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(174, 148, 97, 0.1)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
             }}
           >
             CHECK-UP (Prevenir Riscos)

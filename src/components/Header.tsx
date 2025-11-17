@@ -8,11 +8,11 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 px-6 py-4" style={{ backgroundColor: '#F5F1E9' }}>
+    <header className="sticky top-0 z-50 px-6 py-3" style={{ backgroundColor: '#F5F1E9' }}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="w-[180px] h-[86px]">
-          <OttLogo />
+        <div className="w-[120px] h-auto">
+          <OttLogo className="w-full h-auto" />
         </div>
 
         {/* Navigation */}

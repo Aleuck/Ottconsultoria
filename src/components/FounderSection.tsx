@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import founderImage from "figma:asset/3d1025482d5b0b602c726261664883cedcf563a4.png";
 
 export function FounderSection() {
   return (
@@ -23,8 +24,8 @@ export function FounderSection() {
               className="w-80 h-80 overflow-hidden"
               style={{ backgroundColor: '#FFFFFF', border: '2px solid #0A2342' }}
             >
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1737574821698-862e77f044c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc2MzM4NzI0Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+              <img
+                src={founderImage}
                 alt="Carlos Ott"
                 className="w-full h-full object-cover"
               />
