@@ -37,7 +37,7 @@ export function SolutionSection() {
               strokeWidth="3"
               opacity="0.8"
             />
-            <text x="100" y="120" fill="#AE9461" fontSize="16" fontWeight="500">
+            <text x="90" y="130" fill="#AE9461" fontSize="16" fontWeight="500">
               Design
             </text>
 
@@ -51,7 +51,7 @@ export function SolutionSection() {
               strokeWidth="3"
               opacity="0.8"
             />
-            <text x="270" y="120" fill="#AE9461" fontSize="16" fontWeight="500">
+            <text x="270" y="130" fill="#AE9461" fontSize="16" fontWeight="500">
               Direito
             </text>
 
@@ -65,14 +65,14 @@ export function SolutionSection() {
               strokeWidth="3"
               opacity="0.8"
             />
-            <text x="170" y="350" fill="#AE9461" fontSize="16" fontWeight="500">
+            <text x="150" y="330" fill="#AE9461" fontSize="16" fontWeight="500">
               Comunicação
             </text>
 
             {/* Center Text */}
             <text
               x="200"
-              y="200"
+              y="215"
               fill="#AE9461"
               fontSize="18"
               fontWeight="600"

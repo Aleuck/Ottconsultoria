@@ -1,5 +1,5 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import founderImage from "figma:asset/3d1025482d5b0b602c726261664883cedcf563a4.png";
+import founderImage from "@/assets/founder.jpg";
 
 export function FounderSection() {
   return (
